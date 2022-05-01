@@ -54,11 +54,11 @@ var audio = new Audio('lagu.mp3');audio.play();}
                     confirmButtonText: 'Lanjut',
                     showCancelButton: false,
                 });
-   if(hasiljawab && hasiljawab.length < 16){      
+   if(hasiljawab && hasiljawab.length < 5000){      
    window.hasiljawab = hasiljawab;          	
    await swals.fire('Makasi dah mau jawab <3', 'Nanti kirim jawabannya ke WhatsApp aku aja ya sayanggkku!');   
    window.location = "https://api.whatsapp.com/send?phone=6285693836114&text= " + window.hasiljawab;
-   } else { await swals.fire('Ups!', 'Tidak boleh kosong atau lebih dari 15 karakter, ya!'); reaksi();}
+   } else { await swals.fire('Ups!', 'Tidak boleh kosong atau lebih dari 5000 karakter, ya!'); reaksi();}
    } 
 </script>
  
